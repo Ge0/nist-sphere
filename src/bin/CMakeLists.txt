@@ -1,0 +1,152 @@
+ADD_EXECUTABLE(h_add
+	h_add.c
+)
+
+SET_TARGET_PROPERTIES(h_add
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+
+TARGET_LINK_LIBRARIES(h_add
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(h_delete
+	h_delete.c
+)
+
+SET_TARGET_PROPERTIES(h_delete
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(h_delete
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(h_edit
+	h_edit.c
+)
+
+SET_TARGET_PROPERTIES(h_edit
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(h_edit
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(h_read
+	h_read.c
+)
+
+SET_TARGET_PROPERTIES(h_read
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(h_read
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(h_strip
+	h_strip.c
+)
+
+SET_TARGET_PROPERTIES(h_strip
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(h_strip
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(h_test
+	h_test.c
+)
+
+SET_TARGET_PROPERTIES(h_test
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(h_test
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(tsphere
+	tsphere.c
+)
+
+SET_TARGET_PROPERTIES(tsphere
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(tsphere
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(w_decode
+	w_decode.c
+)
+
+SET_TARGET_PROPERTIES(w_decode
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(w_decode
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(w_diff
+	w_diff.c
+)
+
+SET_TARGET_PROPERTIES(w_diff
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(w_diff
+	sp
+	util
+)
+
+ADD_EXECUTABLE(w_edit
+	w_edit.c
+)
+
+SET_TARGET_PROPERTIES(w_edit
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(w_edit
+	sp
+	util
+)
+
+
+ADD_EXECUTABLE(w_encode
+	w_encode.c
+)
+
+SET_TARGET_PROPERTIES(w_encode
+	PROPERTIES LINK_FLAGS "${LINK_FLAGS} -lm"
+)
+
+TARGET_LINK_LIBRARIES(w_encode
+	sp
+	util
+)
