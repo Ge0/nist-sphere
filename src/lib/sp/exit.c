@@ -27,11 +27,14 @@
 # include <sp/shorten/shorten.h>
 
 /* From: fred@masterd.fdn.org (Frederic SAVOIR) */
-#ifdef __WATCOMC__
-extern volatile int errno;
-#else
-extern int errno;
-#endif
+//#ifdef __WATCOMC__
+//extern volatile int errno;
+//#else
+//extern int errno;
+//#endif
+
+/* "SAVOIR"? You know nothing, John Snow! */
+#include <errno.h>
 
 // extern char *sys_errlist[];
 extern char *argv0;
@@ -82,7 +85,7 @@ void perror_exit(va_alist) va_dcl {
   else {
     (void) vsprintf(exitmessage, fmt, args);
     strcat(exitmessage, ": ");
-    strcat(exitmessage, sys_errlist[errno]);
+    strcat(exitmessage, strerror(errno));
     strcat(exitmessage, "\n");
   }
 
